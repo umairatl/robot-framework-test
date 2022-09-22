@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.8.10 on linux)" generated="20220922 17:57:56.823" rpa="false" schemaversion="3">
+<suite id="s1" name="Task5" source="/home/umairatul/RF_QA/task5.robot">
+<test id="s1-t1" name="Task5" line="40">
+<kw name="Open Deriv page">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://app.deriv.com/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220922 17:57:56.974" level="INFO">Opening browser 'chrome' to base url 'https://app.deriv.com/'.</msg>
+<status status="PASS" starttime="20220922 17:57:56.973" endtime="20220922 17:58:01.590"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220922 17:58:01.590" endtime="20220922 17:58:01.705"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${rise_button}</arg>
+<arg>30</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20220922 17:58:01.705" endtime="20220922 17:58:02.452"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>dt_login_button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220922 17:58:02.452" level="INFO">Clicking element 'dt_login_button'.</msg>
+<status status="PASS" starttime="20220922 17:58:02.452" endtime="20220922 17:58:04.802"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>//input[@type='email']</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20220922 17:58:04.802" endtime="20220922 17:58:04.816"/>
+</kw>
+<status status="PASS" starttime="20220922 17:57:56.973" endtime="20220922 17:58:04.816"/>
+</kw>
+<kw name="Login to Deriv">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//input[@type='email']</arg>
+<arg>umairatul@besquare.com.my</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220922 17:58:04.817" level="INFO">Typing text 'umairatul@besquare.com.my' into text field '//input[@type='email']'.</msg>
+<status status="PASS" starttime="20220922 17:58:04.817" endtime="20220922 17:58:04.906"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//input[@type='password']</arg>
+<arg>Umairatul2020#</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220922 17:58:04.907" level="INFO">Typing text 'Umairatul2020#' into text field '//input[@type='password']'.</msg>
+<status status="PASS" starttime="20220922 17:58:04.907" endtime="20220922 17:58:04.984"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//button[@type='submit']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220922 17:58:04.985" level="INFO">Clicking element '//button[@type='submit']'.</msg>
+<status status="PASS" starttime="20220922 17:58:04.985" endtime="20220922 17:58:06.749"/>
+</kw>
+<status status="PASS" starttime="20220922 17:58:04.817" endtime="20220922 17:58:06.750"/>
+</kw>
+<kw name="Virtual">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${rise_button}</arg>
+<arg>30</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20220922 17:58:06.751" endtime="20220922 17:58:10.052"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>dt_core_account-info_acc-info</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220922 17:58:10.053" level="INFO">Clicking element 'dt_core_account-info_acc-info'.</msg>
+<status status="PASS" starttime="20220922 17:58:10.052" endtime="20220922 17:58:11.018"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>dt_core_account-switcher_demo-tab</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220922 17:58:11.019" level="INFO">Clicking element 'dt_core_account-switcher_demo-tab'.</msg>
+<status status="PASS" starttime="20220922 17:58:11.018" endtime="20220922 17:58:11.324"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>dt_VRTC6202252</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220922 17:58:11.326" level="INFO">Clicking element 'dt_VRTC6202252'.</msg>
+<status status="PASS" starttime="20220922 17:58:11.324" endtime="20220922 17:58:11.744"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${rise_button}</arg>
+<arg>30</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20220922 17:58:11.745" endtime="20220922 17:58:17.992"/>
+</kw>
+<status status="PASS" starttime="20220922 17:58:06.751" endtime="20220922 17:58:17.992"/>
+</kw>
+<kw name="Choose Market">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>//div[@class='cq-symbol-select-btn']</arg>
+<arg>30</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20220922 17:58:17.994" endtime="20220922 17:58:18.057"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//div[@class='cq-symbol-select-btn']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220922 17:58:18.057" level="INFO">Clicking element '//div[@class='cq-symbol-select-btn']'.</msg>
+<status status="PASS" starttime="20220922 17:58:18.057" endtime="20220922 17:58:18.297"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>//div[@class='sc-mcd__filter__item sc-mcd__filter__item--selected']</arg>
+<arg>30</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20220922 17:58:18.298" endtime="20220922 17:58:18.582"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>//div[@class='sc-mcd__item sc-mcd__item--R_50 ']</arg>
+<arg>30</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20220922 17:58:18.582" endtime="20220922 17:58:18.621"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//div[@class='sc-mcd__item sc-mcd__item--R_50 ']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220922 17:58:18.621" level="INFO">Clicking element '//div[@class='sc-mcd__item sc-mcd__item--R_50 ']'.</msg>
+<msg timestamp="20220922 17:58:19.207" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-41.png"&gt;&lt;img src="selenium-screenshot-41.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20220922 17:58:19.207" level="FAIL">StaleElementReferenceException: Message: stale element reference: element is not attached to the page document
+  (Session info: chrome=104.0.5112.101)
+Stacktrace:
+#0 0x55e861b45403 &lt;unknown&gt;
+#1 0x55e86194b778 &lt;unknown&gt;
+#2 0x55e86194e617 &lt;unknown&gt;
+#3 0x55e86194e4c4 &lt;unknown&gt;
+#4 0x55e86194e77c &lt;unknown&gt;
+#5 0x55e8619848ca &lt;unknown&gt;
+#6 0x55e861977d46 &lt;unknown&gt;
+#7 0x55e8619a0a02 &lt;unknown&gt;
+#8 0x55e861977703 &lt;unknown&gt;
+#9 0x55e8619a0b0e &lt;unknown&gt;
+#10 0x55e8619b3c74 &lt;unknown&gt;
+#11 0x55e8619a08f3 &lt;unknown&gt;
+#12 0x55e8619760d8 &lt;unknown&gt;
+#13 0x55e861977205 &lt;unknown&gt;
+#14 0x55e861b8ce3d &lt;unknown&gt;
+#15 0x55e861b8fdb6 &lt;unknown&gt;
+#16 0x55e861b7613e &lt;unknown&gt;
+#17 0x55e861b909b5 &lt;unknown&gt;
+#18 0x55e861b6a970 &lt;unknown&gt;
+#19 0x55e861bad228 &lt;unknown&gt;
+#20 0x55e861bad3bf &lt;unknown&gt;
+#21 0x55e861bc7abe &lt;unknown&gt;
+#22 0x7f1c945aa609 &lt;unknown&gt;
+</msg>
+<status status="FAIL" starttime="20220922 17:58:18.621" endtime="20220922 17:58:19.209"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${rise_button}</arg>
+<arg>30</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="NOT RUN" starttime="20220922 17:58:19.209" endtime="20220922 17:58:19.209"/>
+</kw>
+<status status="FAIL" starttime="20220922 17:58:17.993" endtime="20220922 17:58:19.210"/>
+</kw>
+<status status="FAIL" starttime="20220922 17:57:56.972" endtime="20220922 17:58:19.211">StaleElementReferenceException: Message: stale element reference: element is not attached to the page document
+  (Session info: chrome=104.0.5112.101)
+Stacktrace:
+#0 0x55e861b45403 &lt;unknown&gt;
+#1 0x55e86194b778 &lt;unknown&gt;
+#2 0x55e86194e617 &lt;unknown&gt;
+#3 0x55e86194e4c4 &lt;unknown&gt;
+#4 0x55e86194e77c &lt;unknown&gt;
+#5 0x55e8619848ca &lt;unknown&gt;
+#6 0x55e861977d46 &lt;unknown&gt;
+#7 0x55e8619a0a02 &lt;unknown&gt;
+#8 0x55e861977703 &lt;unknown&gt;
+#9 0x55e8619a0b0e &lt;unknown&gt;
+#10 0x55e8619b3c74 &lt;unknown&gt;
+#11 0x55e8619a08f3 &lt;unknown&gt;
+#12 0x55e8619760d8 &lt;unknown&gt;
+#13 0x55e861977205 &lt;unknown&gt;
+#14 0x55e861b8ce3d &lt;unknown&gt;
+#15 0x55e861b8fdb6 &lt;unknown&gt;
+#16 0x55e861b7613e &lt;unknown&gt;
+#17 0x55e861b909b5 &lt;unknown&gt;
+#18 0x55e861b6a970 &lt;unknown&gt;
+#19 0x55e861bad228 &lt;unknown&gt;
+#20 0x55e861bad3bf &lt;unknown&gt;
+#21 0x55e861bc7abe &lt;unknown&gt;
+#22 0x7f1c945aa609 &lt;unknown&gt;
+</status>
+</test>
+<status status="FAIL" starttime="20220922 17:57:56.824" endtime="20220922 17:58:19.212"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Task5">Task5</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
