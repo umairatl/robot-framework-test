@@ -29,12 +29,22 @@ Choose Market
     Click Element    //div[@class='cq-symbol-select-btn']
     Wait Until Page Contains Element    //div[@class='sc-mcd__filter__item sc-mcd__filter__item--selected']    30
     Wait Until Page Contains Element    //div[@class='sc-mcd__item sc-mcd__item--R_50 ']    30
-    Click Element    //div[@class='sc-mcd__item sc-mcd__item--R_50 ']    
+    Click Element    //div[@class='sc-mcd__item__name' and contains(.,'Volatility 50 Index')]    
     Wait Until Page Contains Element    ${rise_button}   30
 
 Trade Types
     Click Element    //div[@class='contract-type-widget__display']
     Click Element    dt_contract_multiplier_item
+Validate Payout None
+    Element Should Not Contain    //div[@class='trade-container__fieldset-header trade-container__fieldset-header--inline']    Payout
+Condition
+    Click Element    //input[@id='dt_cancellation-checkbox_input']/../span
+    Click Element    //input[@id='dc_stop_loss-checkbox_input']/../span
+    Checkbox Should Be Selected    dc_stop_loss-checkbox_input
+    Checkbox Should Not Be Selected    dt_cancellation-checkbox_input
+    Click Element    //input[@id='dc_stop_loss-checkbox_input']/../span
+    Click Element    //input[@id='dt_cancellation-checkbox_input']/../span
+
 
 *** Test Cases ***
 Task5
@@ -42,3 +52,5 @@ Task5
     Login To Deriv
     Virtual
     Choose Market
+    Trade Types
+    Validate Payout None
