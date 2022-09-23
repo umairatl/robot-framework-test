@@ -13,8 +13,8 @@ Open Deriv page
     Wait Until Page Contains Element    //input[@type='email']    10
 
 Login to Deriv 
-    Input Text    //input[@type='email']    umairatul@besquare.com.my
-    Input Text    //input[@type='password']    Umairatul2020# 
+    Input Text    //input[@type='email']    email
+    Input Text    //input[@type='password']    password 
     Click Element    //button[@type='submit']
 
 Virtual 
