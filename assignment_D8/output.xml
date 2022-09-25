@@ -1,148 +1,259 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0.1 (Python 3.8.10 on linux)" generated="20220924 21:58:35.508" rpa="false" schemaversion="3">
-<suite id="s1" name="Task2" source="/home/umairatul/QA_assignment/task2.robot">
-<test id="s1-t1" name="Task 2" line="51">
+<robot generator="Robot 5.0.1 (Python 3.8.10 on linux)" generated="20220925 17:18:39.739" rpa="false" schemaversion="3">
+<suite id="s1" name="Task1" source="/home/umairatul/RF_QA/assignment_D8/task1.robot">
+<test id="s1-t1" name="Open API Token page" line="61">
 <kw name="Open Page">
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>0.5</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20220925 17:18:39.819" endtime="20220925 17:18:39.819"/>
+</kw>
 <kw name="Open Browser" library="SeleniumLibrary">
-<arg>https://app.deriv.com/account/closing-account</arg>
+<arg>https://app.deriv.com/account/api-token</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220924 21:58:35.590" level="INFO">Opening browser 'chrome' to base url 'https://app.deriv.com/account/closing-account'.</msg>
-<status status="PASS" starttime="20220924 21:58:35.590" endtime="20220924 21:58:45.846"/>
+<msg timestamp="20220925 17:18:39.820" level="INFO">Opening browser 'chrome' to base url 'https://app.deriv.com/account/api-token'.</msg>
+<status status="PASS" starttime="20220925 17:18:39.819" endtime="20220925 17:18:55.648"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20220924 21:58:45.846" endtime="20220924 21:58:45.950"/>
+<status status="PASS" starttime="20220925 17:18:55.648" endtime="20220925 17:18:56.253"/>
 </kw>
-<status status="PASS" starttime="20220924 21:58:35.590" endtime="20220924 21:58:45.950"/>
+<status status="PASS" starttime="20220925 17:18:39.819" endtime="20220925 17:18:56.253"/>
 </kw>
-<kw name="Login to Deriv">
+<status status="PASS" starttime="20220925 17:18:39.818" endtime="20220925 17:18:56.254"/>
+</test>
+<test id="s1-t2" name="Login to Deriv" line="64">
+<kw name="Login">
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
 <arg>//input[@type='email']</arg>
 <arg>10</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20220924 21:58:45.950" endtime="20220924 21:58:49.568"/>
+<status status="PASS" starttime="20220925 17:18:56.256" endtime="20220925 17:18:56.778"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>//input[@type='email']</arg>
 <arg>umairatul@besquare.com.my</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220924 21:58:49.569" level="INFO">Typing text 'umairatul@besquare.com.my' into text field '//input[@type='email']'.</msg>
-<status status="PASS" starttime="20220924 21:58:49.568" endtime="20220924 21:58:49.627"/>
+<msg timestamp="20220925 17:18:56.779" level="INFO">Typing text 'umairatul@besquare.com.my' into text field '//input[@type='email']'.</msg>
+<status status="PASS" starttime="20220925 17:18:56.778" endtime="20220925 17:18:58.366"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>//input[@type='password']</arg>
 <arg>Umairatul2020#</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220924 21:58:49.628" level="INFO">Typing text 'Umairatul2020#' into text field '//input[@type='password']'.</msg>
-<status status="PASS" starttime="20220924 21:58:49.628" endtime="20220924 21:58:49.697"/>
+<msg timestamp="20220925 17:18:58.367" level="INFO">Typing text 'Umairatul2020#' into text field '//input[@type='password']'.</msg>
+<status status="PASS" starttime="20220925 17:18:58.366" endtime="20220925 17:18:59.952"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//button[@type='submit']</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220924 21:58:49.697" level="INFO">Clicking element '//button[@type='submit']'.</msg>
-<status status="PASS" starttime="20220924 21:58:49.697" endtime="20220924 21:58:53.083"/>
+<msg timestamp="20220925 17:18:59.952" level="INFO">Clicking element '//button[@type='submit']'.</msg>
+<status status="PASS" starttime="20220925 17:18:59.952" endtime="20220925 17:19:03.342"/>
 </kw>
+<status status="PASS" starttime="20220925 17:18:56.256" endtime="20220925 17:19:03.342"/>
+</kw>
+<status status="PASS" starttime="20220925 17:18:56.255" endtime="20220925 17:19:03.343"/>
+</test>
+<test id="s1-t3" name="Validate page" line="67">
+<kw name="API Setting Validation">
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
-<arg>//div[@class='notifications-toggle__icon-wrapper']</arg>
-<arg>30</arg>
+<arg>//input[@name='token_name']</arg>
+<arg>20</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20220924 21:58:53.083" endtime="20220924 21:58:53.093"/>
+<status status="PASS" starttime="20220925 17:19:03.345" endtime="20220925 17:19:04.716"/>
 </kw>
-<status status="PASS" starttime="20220924 21:58:45.950" endtime="20220924 21:58:53.094"/>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>//article[@class='da-article']</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20220925 17:19:05.237" level="INFO">Current page contains element '//article[@class='da-article']'.</msg>
+<status status="PASS" starttime="20220925 17:19:04.716" endtime="20220925 17:19:05.237"/>
 </kw>
-<kw name="Information">
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>//button[@class='dc-btn dc-btn--primary dc-btn__large closing-account__button--close-account']</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220924 21:58:53.095" level="INFO">Clicking element '//button[@class='dc-btn dc-btn--primary dc-btn__large closing-account__button--close-account']'.</msg>
-<status status="PASS" starttime="20220924 21:58:53.094" endtime="20220924 21:58:53.176"/>
-</kw>
-<status status="PASS" starttime="20220924 21:58:53.094" endtime="20220924 21:58:53.176"/>
-</kw>
-<kw name="Reason">
 <kw name="Checkbox Should Not Be Selected" library="SeleniumLibrary">
 <arg>//input[@class='dc-checkbox__input']</arg>
 <doc>Verifies checkbox ``locator`` is not selected/checked.</doc>
-<msg timestamp="20220924 21:58:53.177" level="INFO">Verifying checkbox '//input[@class='dc-checkbox__input']' is not selected.</msg>
-<status status="PASS" starttime="20220924 21:58:53.176" endtime="20220924 21:58:53.311"/>
+<msg timestamp="20220925 17:19:05.238" level="INFO">Verifying checkbox '//input[@class='dc-checkbox__input']' is not selected.</msg>
+<status status="PASS" starttime="20220925 17:19:05.238" endtime="20220925 17:19:11.382"/>
+</kw>
+<kw name="Element Should Be Disabled" library="SeleniumLibrary">
+<arg>//button[@class='dc-btn dc-btn__effect dc-btn--primary dc-btn__large dc-btn__button-group da-api-token__button']</arg>
+<doc>Verifies that element identified by ``locator`` is disabled.</doc>
+<status status="PASS" starttime="20220925 17:19:11.382" endtime="20220925 17:19:12.414"/>
+</kw>
+<status status="PASS" starttime="20220925 17:19:03.344" endtime="20220925 17:19:12.414"/>
+</kw>
+<status status="PASS" starttime="20220925 17:19:03.343" endtime="20220925 17:19:12.414"/>
+</test>
+<test id="s1-t4" name="Create First Toke" line="70">
+<kw name="Create First Token">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//input[@name='read']/../span</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220925 17:19:12.417" level="INFO">Clicking element '//input[@name='read']/../span'.</msg>
+<status status="PASS" starttime="20220925 17:19:12.416" endtime="20220925 17:19:13.510"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
-<arg>//input[@class='dc-checkbox__input']/../span</arg>
+<arg>//input[@name='admin']/../span</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220924 21:58:53.311" level="INFO">Clicking element '//input[@class='dc-checkbox__input']/../span'.</msg>
-<status status="PASS" starttime="20220924 21:58:53.311" endtime="20220924 21:58:53.364"/>
+<msg timestamp="20220925 17:19:13.511" level="INFO">Clicking element '//input[@name='admin']/../span'.</msg>
+<status status="PASS" starttime="20220925 17:19:13.510" endtime="20220925 17:19:14.586"/>
 </kw>
-<status status="PASS" starttime="20220924 21:58:53.176" endtime="20220924 21:58:53.364"/>
-</kw>
-<kw name="Input Validation">
 <kw name="Input Text" library="SeleniumLibrary">
-<arg>//textarea[@name='other_trading_platforms']</arg>
-<arg>Not interested anymore</arg>
+<arg>//input[@name='token_name']</arg>
+<arg>Token1</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220924 21:58:53.365" level="INFO">Typing text 'Not interested anymore' into text field '//textarea[@name='other_trading_platforms']'.</msg>
-<status status="PASS" starttime="20220924 21:58:53.365" endtime="20220924 21:58:53.567"/>
+<msg timestamp="20220925 17:19:14.587" level="INFO">Typing text 'Token1' into text field '//input[@name='token_name']'.</msg>
+<status status="PASS" starttime="20220925 17:19:14.587" endtime="20220925 17:19:16.268"/>
 </kw>
-<kw name="Get Text" library="SeleniumLibrary">
-<var>${descvalue}</var>
-<arg>//textarea[@name='other_trading_platforms']</arg>
-<doc>Returns the text value of the element identified by ``locator``.</doc>
-<msg timestamp="20220924 21:58:53.595" level="INFO">${descvalue} = Not interested anymore</msg>
-<status status="PASS" starttime="20220924 21:58:53.567" endtime="20220924 21:58:53.595"/>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//button[@class='dc-btn dc-btn__effect dc-btn--primary dc-btn__large dc-btn__button-group da-api-token__button']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220925 17:19:16.268" level="INFO">Clicking element '//button[@class='dc-btn dc-btn__effect dc-btn--primary dc-btn__large dc-btn__button-group da-api-token__button']'.</msg>
+<status status="PASS" starttime="20220925 17:19:16.268" endtime="20220925 17:19:17.333"/>
 </kw>
-<kw name="Get Text" library="SeleniumLibrary">
-<var>${descvalue2}</var>
-<arg>//textarea[@name='do_to_improve']</arg>
-<doc>Returns the text value of the element identified by ``locator``.</doc>
-<msg timestamp="20220924 21:58:53.619" level="INFO">${descvalue2} = </msg>
-<status status="PASS" starttime="20220924 21:58:53.595" endtime="20220924 21:58:53.619"/>
+<status status="PASS" starttime="20220925 17:19:12.416" endtime="20220925 17:19:17.333"/>
 </kw>
-<kw name="Get Length" library="BuiltIn">
-<var>${length1}</var>
-<arg>${descvalue}</arg>
-<doc>Returns and logs the length of the given item as an integer.</doc>
-<msg timestamp="20220924 21:58:53.620" level="INFO">Length is 22</msg>
-<msg timestamp="20220924 21:58:53.620" level="INFO">${length1} = 22</msg>
-<status status="PASS" starttime="20220924 21:58:53.619" endtime="20220924 21:58:53.620"/>
-</kw>
-<kw name="Get Length" library="BuiltIn">
-<var>${length2}</var>
-<arg>${descvalue2}</arg>
-<doc>Returns and logs the length of the given item as an integer.</doc>
-<msg timestamp="20220924 21:58:53.620" level="INFO">Length is 0</msg>
-<msg timestamp="20220924 21:58:53.620" level="INFO">${length2} = 0</msg>
-<status status="PASS" starttime="20220924 21:58:53.620" endtime="20220924 21:58:53.620"/>
-</kw>
-<kw name="Evaluate" library="BuiltIn">
-<var>${length}</var>
-<arg>${length1}+${length2}</arg>
-<doc>Evaluates the given expression in Python and returns the result.</doc>
-<msg timestamp="20220924 21:58:53.620" level="INFO">${length} = 22</msg>
-<status status="PASS" starttime="20220924 21:58:53.620" endtime="20220924 21:58:53.620"/>
-</kw>
-<kw name="Should Not Be Equal As Integers" library="BuiltIn">
-<arg>${length}</arg>
-<arg>110</arg>
-<doc>Fails if objects are equal after converting them to integers.</doc>
-<msg timestamp="20220924 21:58:53.621" level="INFO">Argument types are:
-&lt;class 'int'&gt;
-&lt;class 'str'&gt;</msg>
-<status status="PASS" starttime="20220924 21:58:53.620" endtime="20220924 21:58:53.621"/>
-</kw>
-<status status="PASS" starttime="20220924 21:58:53.365" endtime="20220924 21:58:53.621"/>
-</kw>
-<status status="PASS" starttime="20220924 21:58:35.589" endtime="20220924 21:58:53.621"/>
+<status status="PASS" starttime="20220925 17:19:12.415" endtime="20220925 17:19:17.333"/>
 </test>
-<status status="PASS" starttime="20220924 21:58:35.508" endtime="20220924 21:58:53.622"/>
+<test id="s1-t5" name="Validate First Token" line="73">
+<kw name="Validate First Token">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>//td[@class='da-api-token__table-cell da-api-token__table-cell--name']</arg>
+<arg>20</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20220925 17:19:17.336" endtime="20220925 17:19:17.853"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>//td[@class='da-api-token__table-cell da-api-token__table-cell--name' and contains(.,'Token1')]</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20220925 17:19:18.370" level="INFO">Current page contains element '//td[@class='da-api-token__table-cell da-api-token__table-cell--name' and contains(.,'Token1')]'.</msg>
+<status status="PASS" starttime="20220925 17:19:17.853" endtime="20220925 17:19:18.371"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>//div[@class='da-api-token__table-scope-cell' and contains(.,'Read')]</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20220925 17:19:18.890" level="INFO">Current page contains element '//div[@class='da-api-token__table-scope-cell' and contains(.,'Read')]'.</msg>
+<status status="PASS" starttime="20220925 17:19:18.371" endtime="20220925 17:19:18.890"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>//div[@class='da-api-token__table-scope-cell da-api-token__table-scope-cell-admin' and contains(.,'Admin')]</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20220925 17:19:19.406" level="INFO">Current page contains element '//div[@class='da-api-token__table-scope-cell da-api-token__table-scope-cell-admin' and contains(.,'Admin')]'.</msg>
+<status status="PASS" starttime="20220925 17:19:18.890" endtime="20220925 17:19:19.406"/>
+</kw>
+<status status="PASS" starttime="20220925 17:19:17.335" endtime="20220925 17:19:19.407"/>
+</kw>
+<status status="PASS" starttime="20220925 17:19:17.334" endtime="20220925 17:19:19.407"/>
+</test>
+<test id="s1-t6" name="Copy function validation" line="76">
+<kw name="Copy First Token">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@data-testid='dt_toggle_visibility_icon']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220925 17:19:19.409" level="INFO">Clicking element '//*[@data-testid='dt_toggle_visibility_icon']'.</msg>
+<status status="PASS" starttime="20220925 17:19:19.409" endtime="20220925 17:19:20.491"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@data-testid='dt_copy_token_icon']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220925 17:19:20.492" level="INFO">Clicking element '//*[@data-testid='dt_copy_token_icon']'.</msg>
+<status status="PASS" starttime="20220925 17:19:20.492" endtime="20220925 17:19:21.552"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//button[@class='dc-btn dc-btn__effect dc-btn--primary dc-btn__large dc-dialog__button']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220925 17:19:21.553" level="INFO">Clicking element '//button[@class='dc-btn dc-btn__effect dc-btn--primary dc-btn__large dc-dialog__button']'.</msg>
+<status status="PASS" starttime="20220925 17:19:21.553" endtime="20220925 17:19:22.613"/>
+</kw>
+<status status="PASS" starttime="20220925 17:19:19.408" endtime="20220925 17:19:22.614"/>
+</kw>
+<status status="PASS" starttime="20220925 17:19:19.408" endtime="20220925 17:19:22.614"/>
+</test>
+<test id="s1-t7" name="Create second token with same name and scope (validate keys are unique)" line="79">
+<kw name="Get First Token">
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${firstToken}</var>
+<arg>//div[@class='da-api-token__clipboard-wrapper']</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220925 17:19:23.668" level="INFO">${firstToken} = 7BF1DZEPV45K9yD</msg>
+<status status="PASS" starttime="20220925 17:19:22.617" endtime="20220925 17:19:23.668"/>
+</kw>
+<status status="PASS" starttime="20220925 17:19:22.616" endtime="20220925 17:19:23.668"/>
+</kw>
+<kw name="Create Second Token">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//input[@name='read']/../span</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220925 17:19:23.669" level="INFO">Clicking element '//input[@name='read']/../span'.</msg>
+<status status="PASS" starttime="20220925 17:19:23.669" endtime="20220925 17:19:24.720"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//input[@name='admin']/../span</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220925 17:19:24.721" level="INFO">Clicking element '//input[@name='admin']/../span'.</msg>
+<status status="PASS" starttime="20220925 17:19:24.720" endtime="20220925 17:19:25.778"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//input[@name='token_name']</arg>
+<arg>Token1</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220925 17:19:25.778" level="INFO">Typing text 'Token1' into text field '//input[@name='token_name']'.</msg>
+<status status="PASS" starttime="20220925 17:19:25.778" endtime="20220925 17:19:27.422"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//button[@class='dc-btn dc-btn__effect dc-btn--primary dc-btn__large dc-btn__button-group da-api-token__button']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220925 17:19:27.423" level="INFO">Clicking element '//button[@class='dc-btn dc-btn__effect dc-btn--primary dc-btn__large dc-btn__button-group da-api-token__button']'.</msg>
+<status status="PASS" starttime="20220925 17:19:27.423" endtime="20220925 17:19:28.478"/>
+</kw>
+<status status="PASS" starttime="20220925 17:19:23.668" endtime="20220925 17:19:28.478"/>
+</kw>
+<kw name="Validate First and Second Token Keys">
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${secondToken}</var>
+<arg>//div[@class='da-api-token__clipboard-wrapper']</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220925 17:19:29.520" level="INFO">${secondToken} = 7BF1DZEPV45K9yD</msg>
+<status status="PASS" starttime="20220925 17:19:28.479" endtime="20220925 17:19:29.520"/>
+</kw>
+<kw name="Should Not Be Equal As Strings" library="BuiltIn">
+<arg>${secondToken}</arg>
+<arg>${firstToken}</arg>
+<doc>Fails if objects are equal after converting them to strings.</doc>
+<status status="PASS" starttime="20220925 17:19:29.521" endtime="20220925 17:19:29.521"/>
+</kw>
+<status status="PASS" starttime="20220925 17:19:28.478" endtime="20220925 17:19:29.521"/>
+</kw>
+<status status="PASS" starttime="20220925 17:19:22.615" endtime="20220925 17:19:29.522"/>
+</test>
+<test id="s1-t8" name="Delete Token" line="84">
+<kw name="Delete Token">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@data-testid='dt_token_delete_icon']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220925 17:19:29.524" level="INFO">Clicking element '//*[@data-testid='dt_token_delete_icon']'.</msg>
+<status status="PASS" starttime="20220925 17:19:29.524" endtime="20220925 17:19:30.588"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//button[@class='dc-btn dc-btn__effect dc-btn--primary dc-btn__large dc-dialog__button']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220925 17:19:30.589" level="INFO">Clicking element '//button[@class='dc-btn dc-btn__effect dc-btn--primary dc-btn__large dc-dialog__button']'.</msg>
+<status status="PASS" starttime="20220925 17:19:30.589" endtime="20220925 17:19:31.629"/>
+</kw>
+<status status="PASS" starttime="20220925 17:19:29.523" endtime="20220925 17:19:31.629"/>
+</kw>
+<status status="PASS" starttime="20220925 17:19:29.522" endtime="20220925 17:19:31.629"/>
+</test>
+<status status="PASS" starttime="20220925 17:18:39.740" endtime="20220925 17:19:31.630"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="8" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Task2">Task2</stat>
+<stat pass="8" fail="0" skip="0" id="s1" name="Task1">Task1</stat>
 </suite>
 </statistics>
 <errors>
