@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.8.10 on linux)" generated="20220924 21:58:35.508" rpa="false" schemaversion="3">
+<suite id="s1" name="Task2" source="/home/umairatul/QA_assignment/task2.robot">
+<test id="s1-t1" name="Task 2" line="51">
+<kw name="Open Page">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://app.deriv.com/account/closing-account</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220924 21:58:35.590" level="INFO">Opening browser 'chrome' to base url 'https://app.deriv.com/account/closing-account'.</msg>
+<status status="PASS" starttime="20220924 21:58:35.590" endtime="20220924 21:58:45.846"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220924 21:58:45.846" endtime="20220924 21:58:45.950"/>
+</kw>
+<status status="PASS" starttime="20220924 21:58:35.590" endtime="20220924 21:58:45.950"/>
+</kw>
+<kw name="Login to Deriv">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>//input[@type='email']</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20220924 21:58:45.950" endtime="20220924 21:58:49.568"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//input[@type='email']</arg>
+<arg>umairatul@besquare.com.my</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220924 21:58:49.569" level="INFO">Typing text 'umairatul@besquare.com.my' into text field '//input[@type='email']'.</msg>
+<status status="PASS" starttime="20220924 21:58:49.568" endtime="20220924 21:58:49.627"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//input[@type='password']</arg>
+<arg>Umairatul2020#</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220924 21:58:49.628" level="INFO">Typing text 'Umairatul2020#' into text field '//input[@type='password']'.</msg>
+<status status="PASS" starttime="20220924 21:58:49.628" endtime="20220924 21:58:49.697"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//button[@type='submit']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220924 21:58:49.697" level="INFO">Clicking element '//button[@type='submit']'.</msg>
+<status status="PASS" starttime="20220924 21:58:49.697" endtime="20220924 21:58:53.083"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>//div[@class='notifications-toggle__icon-wrapper']</arg>
+<arg>30</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20220924 21:58:53.083" endtime="20220924 21:58:53.093"/>
+</kw>
+<status status="PASS" starttime="20220924 21:58:45.950" endtime="20220924 21:58:53.094"/>
+</kw>
+<kw name="Information">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//button[@class='dc-btn dc-btn--primary dc-btn__large closing-account__button--close-account']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220924 21:58:53.095" level="INFO">Clicking element '//button[@class='dc-btn dc-btn--primary dc-btn__large closing-account__button--close-account']'.</msg>
+<status status="PASS" starttime="20220924 21:58:53.094" endtime="20220924 21:58:53.176"/>
+</kw>
+<status status="PASS" starttime="20220924 21:58:53.094" endtime="20220924 21:58:53.176"/>
+</kw>
+<kw name="Reason">
+<kw name="Checkbox Should Not Be Selected" library="SeleniumLibrary">
+<arg>//input[@class='dc-checkbox__input']</arg>
+<doc>Verifies checkbox ``locator`` is not selected/checked.</doc>
+<msg timestamp="20220924 21:58:53.177" level="INFO">Verifying checkbox '//input[@class='dc-checkbox__input']' is not selected.</msg>
+<status status="PASS" starttime="20220924 21:58:53.176" endtime="20220924 21:58:53.311"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//input[@class='dc-checkbox__input']/../span</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220924 21:58:53.311" level="INFO">Clicking element '//input[@class='dc-checkbox__input']/../span'.</msg>
+<status status="PASS" starttime="20220924 21:58:53.311" endtime="20220924 21:58:53.364"/>
+</kw>
+<status status="PASS" starttime="20220924 21:58:53.176" endtime="20220924 21:58:53.364"/>
+</kw>
+<kw name="Input Validation">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//textarea[@name='other_trading_platforms']</arg>
+<arg>Not interested anymore</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220924 21:58:53.365" level="INFO">Typing text 'Not interested anymore' into text field '//textarea[@name='other_trading_platforms']'.</msg>
+<status status="PASS" starttime="20220924 21:58:53.365" endtime="20220924 21:58:53.567"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${descvalue}</var>
+<arg>//textarea[@name='other_trading_platforms']</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220924 21:58:53.595" level="INFO">${descvalue} = Not interested anymore</msg>
+<status status="PASS" starttime="20220924 21:58:53.567" endtime="20220924 21:58:53.595"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${descvalue2}</var>
+<arg>//textarea[@name='do_to_improve']</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220924 21:58:53.619" level="INFO">${descvalue2} = </msg>
+<status status="PASS" starttime="20220924 21:58:53.595" endtime="20220924 21:58:53.619"/>
+</kw>
+<kw name="Get Length" library="BuiltIn">
+<var>${length1}</var>
+<arg>${descvalue}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<msg timestamp="20220924 21:58:53.620" level="INFO">Length is 22</msg>
+<msg timestamp="20220924 21:58:53.620" level="INFO">${length1} = 22</msg>
+<status status="PASS" starttime="20220924 21:58:53.619" endtime="20220924 21:58:53.620"/>
+</kw>
+<kw name="Get Length" library="BuiltIn">
+<var>${length2}</var>
+<arg>${descvalue2}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<msg timestamp="20220924 21:58:53.620" level="INFO">Length is 0</msg>
+<msg timestamp="20220924 21:58:53.620" level="INFO">${length2} = 0</msg>
+<status status="PASS" starttime="20220924 21:58:53.620" endtime="20220924 21:58:53.620"/>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<var>${length}</var>
+<arg>${length1}+${length2}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20220924 21:58:53.620" level="INFO">${length} = 22</msg>
+<status status="PASS" starttime="20220924 21:58:53.620" endtime="20220924 21:58:53.620"/>
+</kw>
+<kw name="Should Not Be Equal As Integers" library="BuiltIn">
+<arg>${length}</arg>
+<arg>110</arg>
+<doc>Fails if objects are equal after converting them to integers.</doc>
+<msg timestamp="20220924 21:58:53.621" level="INFO">Argument types are:
+&lt;class 'int'&gt;
+&lt;class 'str'&gt;</msg>
+<status status="PASS" starttime="20220924 21:58:53.620" endtime="20220924 21:58:53.621"/>
+</kw>
+<status status="PASS" starttime="20220924 21:58:53.365" endtime="20220924 21:58:53.621"/>
+</kw>
+<status status="PASS" starttime="20220924 21:58:35.589" endtime="20220924 21:58:53.621"/>
+</test>
+<status status="PASS" starttime="20220924 21:58:35.508" endtime="20220924 21:58:53.622"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Task2">Task2</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
