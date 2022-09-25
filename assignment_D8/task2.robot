@@ -11,8 +11,8 @@ Open Page
 
 Login to Deriv 
     Wait Until Page Contains Element    //input[@type='email']    10
-    Input Text    //input[@type='email']    umairatul@besquare.com.my
-    Input Text    //input[@type='password']    Umairatul2020#
+    Input Text    //input[@type='email']    email
+    Input Text    //input[@type='password']    password
     Click Element    //button[@type='submit']
     Wait Until Page Contains Element    //div[@class='notifications-toggle__icon-wrapper']    30
 
