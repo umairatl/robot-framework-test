@@ -3,17 +3,20 @@ Library  SeleniumLibrary
 
 *** Variables ***
 ${rise_button}  //div[@class='btn-purchase__text_wrapper' and contains(.,'Rise')]
+${email}    //input[@type='email']
+${symbolButton}    //div[@class='cq-symbol-select-btn']
+${duration}    //input[@name='duration']
 
 *** Keywords ***
-Open Deriv page 
+Open page 
     Open Browser    https://app.deriv.com/    chrome
     Maximize Browser Window
     Wait Until Page Contains Element    ${rise_button}    30
     Click Element    dt_login_button
-    Wait Until Page Contains Element    //input[@type='email']    10
+    Wait Until Page Contains Element    ${email}    10
 
-Login to Deriv 
-    Input Text    //input[@type='email']    email
+Login 
+    Input Text    ${email}    email
     Input Text    //input[@type='password']    password 
     Click Element    //button[@type='submit']
 
@@ -24,9 +27,9 @@ Virtual
     Click Element    dt_VRTC6202252
     Wait Until Page Contains Element    ${rise_button}   30
 
-Choose Market
-    Wait Until Page Contains Element    //div[@class='cq-symbol-select-btn']    30
-    Click Element    //div[@class='cq-symbol-select-btn']
+Forex Market
+    Wait Until Page Contains Element    ${symbolButton}    30
+    Click Element    ${symbolButton}
     Wait Until Page Contains Element    //div[@class='sc-mcd__filter__item sc-mcd__filter__item--selected']    30
     Wait Until Page Contains Element    //div[@class='sc-mcd__filter__item ']    30
     Click Element    //div[@class='sc-mcd__filter__item ' and contains(.,'Forex')]
@@ -37,11 +40,13 @@ Trade Types
     Click Element    //div[@class='contract-type-widget__display']
     Click Element    dt_contract_high_low_item
 
-Trade Condition
-    Press Keys    //input[@name='duration']    BACKSPACE    BACKSPACE    
-    Input Text    //input[@name='duration']    4
+Set Duration
+    Press Keys    ${duration}    BACKSPACE    BACKSPACE    
+    Input Text    ${duration}    4
     Press Keys    //input[@name='barrier_1']    HOME    SHIFT+=
     Click Element    dc_payout_toggle_item
+
+Set Payout
     Press Keys    //input[@type='tel']    BACKSPACE    BACKSPACE
     Input Text    //input[@type='tel']    10.00
 
@@ -50,10 +55,23 @@ Validation
 
 *** Test Cases ***
 Task4
-    Open Deriv page 
-    Login To Deriv
-    Virtual
-    Choose Market
+
+Open Deriv page 
+    Open page
+
+Login To Deriv
+    Login
+
+Change to Demo account & validate
+   Virtual
+
+Choose Forex Market
+    Forex Market
+
+Choose High/Low Types
     Trade Types
-    Trade Condition
+
+Trade Conditions
+    Set Duration
+    Set Payout
     Validation

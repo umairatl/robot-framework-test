@@ -1,0 +1,1056 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.8.10 on linux)" generated="20220925 14:45:20.387" rpa="false" schemaversion="3">
+<suite id="s1" name="Task5" source="/home/umairatul/RF_QA/assignment1/task5.robot">
+<test id="s1-t1" name="Open Deriv Page" line="90">
+<kw name="Landing Page">
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>0.5</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20220925 14:45:20.483" endtime="20220925 14:45:20.483"/>
+</kw>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://app.deriv.com/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220925 14:45:20.484" level="INFO">Opening browser 'chrome' to base url 'https://app.deriv.com/'.</msg>
+<msg timestamp="20220925 14:45:21.577" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20220925 14:45:21.578" level="FAIL">WebDriverException: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=104.0.5112.101)
+Stacktrace:
+#0 0x562b640b7403 &lt;unknown&gt;
+#1 0x562b63ebd778 &lt;unknown&gt;
+#2 0x562b63eb7565 &lt;unknown&gt;
+#3 0x562b63eab296 &lt;unknown&gt;
+#4 0x562b63eac232 &lt;unknown&gt;
+#5 0x562b63eab562 &lt;unknown&gt;
+#6 0x562b63eaa995 &lt;unknown&gt;
+#7 0x562b63ea965b &lt;unknown&gt;
+#8 0x562b63ea9ac2 &lt;unknown&gt;
+#9 0x562b63ebf1e2 &lt;unknown&gt;
+#10 0x562b63f263cf &lt;unknown&gt;
+#11 0x562b63f12a02 &lt;unknown&gt;
+#12 0x562b63f25c74 &lt;unknown&gt;
+#13 0x562b63f128f3 &lt;unknown&gt;
+#14 0x562b63ee80d8 &lt;unknown&gt;
+#15 0x562b63ee9205 &lt;unknown&gt;
+#16 0x562b640fee3d &lt;unknown&gt;
+#17 0x562b64101db6 &lt;unknown&gt;
+#18 0x562b640e813e &lt;unknown&gt;
+#19 0x562b641029b5 &lt;unknown&gt;
+#20 0x562b640dc970 &lt;unknown&gt;
+#21 0x562b6411f228 &lt;unknown&gt;
+#22 0x562b6411f3bf &lt;unknown&gt;
+#23 0x562b64139abe &lt;unknown&gt;
+#24 0x7fe798597609 &lt;unknown&gt;
+</msg>
+<status status="FAIL" starttime="20220925 14:45:20.483" endtime="20220925 14:45:21.580"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" starttime="20220925 14:45:21.581" endtime="20220925 14:45:21.581"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${rise_button}</arg>
+<arg>30</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="NOT RUN" starttime="20220925 14:45:21.581" endtime="20220925 14:45:21.581"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>dt_login_button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220925 14:45:21.581" endtime="20220925 14:45:21.581"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${email}</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="NOT RUN" starttime="20220925 14:45:21.581" endtime="20220925 14:45:21.581"/>
+</kw>
+<status status="FAIL" starttime="20220925 14:45:20.483" endtime="20220925 14:45:21.582"/>
+</kw>
+<status status="FAIL" starttime="20220925 14:45:20.482" endtime="20220925 14:45:21.583">WebDriverException: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=104.0.5112.101)
+Stacktrace:
+#0 0x562b640b7403 &lt;unknown&gt;
+#1 0x562b63ebd778 &lt;unknown&gt;
+#2 0x562b63eb7565 &lt;unknown&gt;
+#3 0x562b63eab296 &lt;unknown&gt;
+#4 0x562b63eac232 &lt;unknown&gt;
+#5 0x562b63eab562 &lt;unknown&gt;
+#6 0x562b63eaa995 &lt;unknown&gt;
+#7 0x562b63ea965b &lt;unknown&gt;
+#8 0x562b63ea9ac2 &lt;unknown&gt;
+#9 0x562b63ebf1e2 &lt;unknown&gt;
+#10 0x562b63f263cf &lt;unknown&gt;
+#11 0x562b63f12a02 &lt;unknown&gt;
+#12 0x562b63f25c74 &lt;unknown&gt;
+#13 0x562b63f128f3 &lt;unknown&gt;
+#14 0x562b63ee80d8 &lt;unknown&gt;
+#15 0x562b63ee9205 &lt;unknown&gt;
+#16 0x562b640fee3d &lt;unknown&gt;
+#17 0x562b64101db6 &lt;unknown&gt;
+#18 0x562b640e813e &lt;unknown&gt;
+#19 0x562b641029b5 &lt;unknown&gt;
+#20 0x562b640dc970 &lt;unknown&gt;
+#21 0x562b6411f228 &lt;unknown&gt;
+#22 0x562b6411f3bf &lt;unknown&gt;
+#23 0x562b64139abe &lt;unknown&gt;
+#24 0x7fe798597609 &lt;unknown&gt;
+</status>
+</test>
+<test id="s1-t2" name="Login into Deriv" line="93">
+<kw name="Login">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${email}</arg>
+<arg>email</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220925 14:45:21.589" level="INFO">Typing text 'email' into text field '//input[@type='email']'.</msg>
+<msg timestamp="20220925 14:45:22.679" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20220925 14:45:22.680" level="FAIL">Element with locator '//input[@type='email']' not found.</msg>
+<status status="FAIL" starttime="20220925 14:45:21.587" endtime="20220925 14:45:22.681"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//input[@type='password']</arg>
+<arg>password</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220925 14:45:22.682" endtime="20220925 14:45:22.682"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//button[@type='submit']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220925 14:45:22.682" endtime="20220925 14:45:22.682"/>
+</kw>
+<status status="FAIL" starttime="20220925 14:45:21.587" endtime="20220925 14:45:22.682"/>
+</kw>
+<status status="FAIL" starttime="20220925 14:45:21.586" endtime="20220925 14:45:22.683">Element with locator '//input[@type='email']' not found.</status>
+</test>
+<test id="s1-t3" name="Go to Virtual Account" line="96">
+<kw name="Virtual">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${rise_button}</arg>
+<arg>30</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<msg timestamp="20220925 14:45:37.526" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: chrome not reachable
+  (Session info: chrome=104.0.5112.101)
+Stacktrace:
+#0 0x562b640b7403 &lt;unknown&gt;
+#1 0x562b63ebd64b &lt;unknown&gt;
+#2 0x562b63eadd24 &lt;unknown&gt;
+#3 0x562b63e9ee2e &lt;unknown&gt;
+#4 0x562b63ea3962 &lt;unknown&gt;
+#5 0x562b63ea8946 &lt;unknown&gt;
+#6 0x562b63ebeb72 &lt;unknown&gt;
+#7 0x562b63f252f1 &lt;unknown&gt;
+#8 0x562b63f128f3 &lt;unknown&gt;
+#9 0x562b63ee80d8 &lt;unknown&gt;
+#10 0x562b63ee9205 &lt;unknown&gt;
+#11 0x562b640fee3d &lt;unknown&gt;
+#12 0x562b64101db6 &lt;unknown&gt;
+#13 0x562b640e813e &lt;unknown&gt;
+#14 0x562b641029b5 &lt;unknown&gt;
+#15 0x562b640dc970 &lt;unknown&gt;
+#16 0x562b6411f228 &lt;unknown&gt;
+#17 0x562b6411f3bf &lt;unknown&gt;
+#18 0x562b64139abe &lt;unknown&gt;
+#19 0x7fe798597609 &lt;unknown&gt;
+</msg>
+<msg timestamp="20220925 14:45:37.527" level="FAIL">WebDriverException: Message: chrome not reachable
+  (Session info: chrome=104.0.5112.101)
+Stacktrace:
+#0 0x562b640b7403 &lt;unknown&gt;
+#1 0x562b63ebd64b &lt;unknown&gt;
+#2 0x562b63eadd24 &lt;unknown&gt;
+#3 0x562b63e9ee2e &lt;unknown&gt;
+#4 0x562b63ea3962 &lt;unknown&gt;
+#5 0x562b63ea8946 &lt;unknown&gt;
+#6 0x562b63ebeb72 &lt;unknown&gt;
+#7 0x562b63f252f1 &lt;unknown&gt;
+#8 0x562b63f128f3 &lt;unknown&gt;
+#9 0x562b63ee80d8 &lt;unknown&gt;
+#10 0x562b63ee9205 &lt;unknown&gt;
+#11 0x562b640fee3d &lt;unknown&gt;
+#12 0x562b64101db6 &lt;unknown&gt;
+#13 0x562b640e813e &lt;unknown&gt;
+#14 0x562b641029b5 &lt;unknown&gt;
+#15 0x562b640dc970 &lt;unknown&gt;
+#16 0x562b6411f228 &lt;unknown&gt;
+#17 0x562b6411f3bf &lt;unknown&gt;
+#18 0x562b64139abe &lt;unknown&gt;
+#19 0x7fe798597609 &lt;unknown&gt;
+</msg>
+<status status="FAIL" starttime="20220925 14:45:22.687" endtime="20220925 14:45:37.528"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>dt_core_account-info_acc-info</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220925 14:45:37.529" endtime="20220925 14:45:37.529"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>dt_core_account-switcher_demo-tab</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220925 14:45:37.529" endtime="20220925 14:45:37.529"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>dt_VRTC6202252</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220925 14:45:37.529" endtime="20220925 14:45:37.529"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${rise_button}</arg>
+<arg>30</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="NOT RUN" starttime="20220925 14:45:37.529" endtime="20220925 14:45:37.529"/>
+</kw>
+<status status="FAIL" starttime="20220925 14:45:22.686" endtime="20220925 14:45:37.529"/>
+</kw>
+<status status="FAIL" starttime="20220925 14:45:22.685" endtime="20220925 14:45:37.530">WebDriverException: Message: chrome not reachable
+  (Session info: chrome=104.0.5112.101)
+Stacktrace:
+#0 0x562b640b7403 &lt;unknown&gt;
+#1 0x562b63ebd64b &lt;unknown&gt;
+#2 0x562b63eadd24 &lt;unknown&gt;
+#3 0x562b63e9ee2e &lt;unknown&gt;
+#4 0x562b63ea3962 &lt;unknown&gt;
+#5 0x562b63ea8946 &lt;unknown&gt;
+#6 0x562b63ebeb72 &lt;unknown&gt;
+#7 0x562b63f252f1 &lt;unknown&gt;
+#8 0x562b63f128f3 &lt;unknown&gt;
+#9 0x562b63ee80d8 &lt;unknown&gt;
+#10 0x562b63ee9205 &lt;unknown&gt;
+#11 0x562b640fee3d &lt;unknown&gt;
+#12 0x562b64101db6 &lt;unknown&gt;
+#13 0x562b640e813e &lt;unknown&gt;
+#14 0x562b641029b5 &lt;unknown&gt;
+#15 0x562b640dc970 &lt;unknown&gt;
+#16 0x562b6411f228 &lt;unknown&gt;
+#17 0x562b6411f3bf &lt;unknown&gt;
+#18 0x562b64139abe &lt;unknown&gt;
+#19 0x7fe798597609 &lt;unknown&gt;
+</status>
+</test>
+<test id="s1-t4" name="Set Market and Trade Types" line="99">
+<kw name="Market Type">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>//div[@class='cq-symbol-select-btn']</arg>
+<arg>30</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<msg timestamp="20220925 14:45:37.536" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: chrome not reachable
+  (Session info: chrome=104.0.5112.101)
+Stacktrace:
+#0 0x562b640b7403 &lt;unknown&gt;
+#1 0x562b63ebd64b &lt;unknown&gt;
+#2 0x562b63eadd24 &lt;unknown&gt;
+#3 0x562b63e9ee2e &lt;unknown&gt;
+#4 0x562b63ea3962 &lt;unknown&gt;
+#5 0x562b63ea8946 &lt;unknown&gt;
+#6 0x562b63ebeb72 &lt;unknown&gt;
+#7 0x562b63f252f1 &lt;unknown&gt;
+#8 0x562b63f128f3 &lt;unknown&gt;
+#9 0x562b63ee80d8 &lt;unknown&gt;
+#10 0x562b63ee9205 &lt;unknown&gt;
+#11 0x562b640fee3d &lt;unknown&gt;
+#12 0x562b64101db6 &lt;unknown&gt;
+#13 0x562b640e813e &lt;unknown&gt;
+#14 0x562b641029b5 &lt;unknown&gt;
+#15 0x562b640dc970 &lt;unknown&gt;
+#16 0x562b6411f228 &lt;unknown&gt;
+#17 0x562b6411f3bf &lt;unknown&gt;
+#18 0x562b64139abe &lt;unknown&gt;
+#19 0x7fe798597609 &lt;unknown&gt;
+</msg>
+<msg timestamp="20220925 14:45:37.537" level="FAIL">WebDriverException: Message: chrome not reachable
+  (Session info: chrome=104.0.5112.101)
+Stacktrace:
+#0 0x562b640b7403 &lt;unknown&gt;
+#1 0x562b63ebd64b &lt;unknown&gt;
+#2 0x562b63eadd24 &lt;unknown&gt;
+#3 0x562b63e9ee2e &lt;unknown&gt;
+#4 0x562b63ea3962 &lt;unknown&gt;
+#5 0x562b63ea8946 &lt;unknown&gt;
+#6 0x562b63ebeb72 &lt;unknown&gt;
+#7 0x562b63f252f1 &lt;unknown&gt;
+#8 0x562b63f128f3 &lt;unknown&gt;
+#9 0x562b63ee80d8 &lt;unknown&gt;
+#10 0x562b63ee9205 &lt;unknown&gt;
+#11 0x562b640fee3d &lt;unknown&gt;
+#12 0x562b64101db6 &lt;unknown&gt;
+#13 0x562b640e813e &lt;unknown&gt;
+#14 0x562b641029b5 &lt;unknown&gt;
+#15 0x562b640dc970 &lt;unknown&gt;
+#16 0x562b6411f228 &lt;unknown&gt;
+#17 0x562b6411f3bf &lt;unknown&gt;
+#18 0x562b64139abe &lt;unknown&gt;
+#19 0x7fe798597609 &lt;unknown&gt;
+</msg>
+<status status="FAIL" starttime="20220925 14:45:37.531" endtime="20220925 14:45:37.537"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//div[@class='cq-menu-btn']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220925 14:45:37.537" endtime="20220925 14:45:37.538"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>//div[@class='sc-mcd__filter__item sc-mcd__filter__item--selected']</arg>
+<arg>30</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="NOT RUN" starttime="20220925 14:45:37.538" endtime="20220925 14:45:37.538"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${volatilityIndex}</arg>
+<arg>30</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="NOT RUN" starttime="20220925 14:45:37.538" endtime="20220925 14:45:37.538"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${volatilityIndex}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220925 14:45:37.538" endtime="20220925 14:45:37.538"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${rise_button}</arg>
+<arg>30</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="NOT RUN" starttime="20220925 14:45:37.538" endtime="20220925 14:45:37.538"/>
+</kw>
+<status status="FAIL" starttime="20220925 14:45:37.531" endtime="20220925 14:45:37.538"/>
+</kw>
+<kw name="Trade Types">
+<status status="NOT RUN" starttime="20220925 14:45:37.539" endtime="20220925 14:45:37.539"/>
+</kw>
+<status status="FAIL" starttime="20220925 14:45:37.530" endtime="20220925 14:45:37.539">WebDriverException: Message: chrome not reachable
+  (Session info: chrome=104.0.5112.101)
+Stacktrace:
+#0 0x562b640b7403 &lt;unknown&gt;
+#1 0x562b63ebd64b &lt;unknown&gt;
+#2 0x562b63eadd24 &lt;unknown&gt;
+#3 0x562b63e9ee2e &lt;unknown&gt;
+#4 0x562b63ea3962 &lt;unknown&gt;
+#5 0x562b63ea8946 &lt;unknown&gt;
+#6 0x562b63ebeb72 &lt;unknown&gt;
+#7 0x562b63f252f1 &lt;unknown&gt;
+#8 0x562b63f128f3 &lt;unknown&gt;
+#9 0x562b63ee80d8 &lt;unknown&gt;
+#10 0x562b63ee9205 &lt;unknown&gt;
+#11 0x562b640fee3d &lt;unknown&gt;
+#12 0x562b64101db6 &lt;unknown&gt;
+#13 0x562b640e813e &lt;unknown&gt;
+#14 0x562b641029b5 &lt;unknown&gt;
+#15 0x562b640dc970 &lt;unknown&gt;
+#16 0x562b6411f228 &lt;unknown&gt;
+#17 0x562b6411f3bf &lt;unknown&gt;
+#18 0x562b64139abe &lt;unknown&gt;
+#19 0x7fe798597609 &lt;unknown&gt;
+</status>
+</test>
+<test id="s1-t5" name="Only stake is allowed." line="103">
+<kw name="Validate Only Stake">
+<kw name="Element Should Not Contain" library="SeleniumLibrary">
+<arg>//div[@class='trade-container__fieldset-header trade-container__fieldset-header--inline']</arg>
+<arg>Payout</arg>
+<doc>Verifies that element ``locator`` does not contain text ``expected``.</doc>
+<msg timestamp="20220925 14:45:37.550" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: chrome not reachable
+  (Session info: chrome=104.0.5112.101)
+Stacktrace:
+#0 0x562b640b7403 &lt;unknown&gt;
+#1 0x562b63ebd64b &lt;unknown&gt;
+#2 0x562b63eadd24 &lt;unknown&gt;
+#3 0x562b63e9ee2e &lt;unknown&gt;
+#4 0x562b63ea3962 &lt;unknown&gt;
+#5 0x562b63ea8946 &lt;unknown&gt;
+#6 0x562b63ebeb72 &lt;unknown&gt;
+#7 0x562b63f252f1 &lt;unknown&gt;
+#8 0x562b63f128f3 &lt;unknown&gt;
+#9 0x562b63ee80d8 &lt;unknown&gt;
+#10 0x562b63ee9205 &lt;unknown&gt;
+#11 0x562b640fee3d &lt;unknown&gt;
+#12 0x562b64101db6 &lt;unknown&gt;
+#13 0x562b640e813e &lt;unknown&gt;
+#14 0x562b641029b5 &lt;unknown&gt;
+#15 0x562b640dc970 &lt;unknown&gt;
+#16 0x562b6411f228 &lt;unknown&gt;
+#17 0x562b6411f3bf &lt;unknown&gt;
+#18 0x562b64139abe &lt;unknown&gt;
+#19 0x7fe798597609 &lt;unknown&gt;
+</msg>
+<msg timestamp="20220925 14:45:37.551" level="FAIL">WebDriverException: Message: chrome not reachable
+  (Session info: chrome=104.0.5112.101)
+Stacktrace:
+#0 0x562b640b7403 &lt;unknown&gt;
+#1 0x562b63ebd64b &lt;unknown&gt;
+#2 0x562b63eadd24 &lt;unknown&gt;
+#3 0x562b63e9ee2e &lt;unknown&gt;
+#4 0x562b63ea3962 &lt;unknown&gt;
+#5 0x562b63ea8946 &lt;unknown&gt;
+#6 0x562b63ebeb72 &lt;unknown&gt;
+#7 0x562b63f252f1 &lt;unknown&gt;
+#8 0x562b63f128f3 &lt;unknown&gt;
+#9 0x562b63ee80d8 &lt;unknown&gt;
+#10 0x562b63ee9205 &lt;unknown&gt;
+#11 0x562b640fee3d &lt;unknown&gt;
+#12 0x562b64101db6 &lt;unknown&gt;
+#13 0x562b640e813e &lt;unknown&gt;
+#14 0x562b641029b5 &lt;unknown&gt;
+#15 0x562b640dc970 &lt;unknown&gt;
+#16 0x562b6411f228 &lt;unknown&gt;
+#17 0x562b6411f3bf &lt;unknown&gt;
+#18 0x562b64139abe &lt;unknown&gt;
+#19 0x7fe798597609 &lt;unknown&gt;
+</msg>
+<status status="FAIL" starttime="20220925 14:45:37.541" endtime="20220925 14:45:37.552"/>
+</kw>
+<status status="FAIL" starttime="20220925 14:45:37.541" endtime="20220925 14:45:37.553"/>
+</kw>
+<status status="FAIL" starttime="20220925 14:45:37.540" endtime="20220925 14:45:37.553">WebDriverException: Message: chrome not reachable
+  (Session info: chrome=104.0.5112.101)
+Stacktrace:
+#0 0x562b640b7403 &lt;unknown&gt;
+#1 0x562b63ebd64b &lt;unknown&gt;
+#2 0x562b63eadd24 &lt;unknown&gt;
+#3 0x562b63e9ee2e &lt;unknown&gt;
+#4 0x562b63ea3962 &lt;unknown&gt;
+#5 0x562b63ea8946 &lt;unknown&gt;
+#6 0x562b63ebeb72 &lt;unknown&gt;
+#7 0x562b63f252f1 &lt;unknown&gt;
+#8 0x562b63f128f3 &lt;unknown&gt;
+#9 0x562b63ee80d8 &lt;unknown&gt;
+#10 0x562b63ee9205 &lt;unknown&gt;
+#11 0x562b640fee3d &lt;unknown&gt;
+#12 0x562b64101db6 &lt;unknown&gt;
+#13 0x562b640e813e &lt;unknown&gt;
+#14 0x562b641029b5 &lt;unknown&gt;
+#15 0x562b640dc970 &lt;unknown&gt;
+#16 0x562b6411f228 &lt;unknown&gt;
+#17 0x562b6411f3bf &lt;unknown&gt;
+#18 0x562b64139abe &lt;unknown&gt;
+#19 0x7fe798597609 &lt;unknown&gt;
+</status>
+</test>
+<test id="s1-t6" name="Validate Min/Max Stake" line="106">
+<kw name="Stake Min/Max">
+<kw name="Get Value" library="SeleniumLibrary">
+<var>${getInteger}</var>
+<arg>${amountField}</arg>
+<doc>Returns the value attribute of the element identified by ``locator``.</doc>
+<msg timestamp="20220925 14:45:37.561" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: chrome not reachable
+  (Session info: chrome=104.0.5112.101)
+Stacktrace:
+#0 0x562b640b7403 &lt;unknown&gt;
+#1 0x562b63ebd64b &lt;unknown&gt;
+#2 0x562b63eadd24 &lt;unknown&gt;
+#3 0x562b63e9ee2e &lt;unknown&gt;
+#4 0x562b63ea3962 &lt;unknown&gt;
+#5 0x562b63ea8946 &lt;unknown&gt;
+#6 0x562b63ebeb72 &lt;unknown&gt;
+#7 0x562b63f252f1 &lt;unknown&gt;
+#8 0x562b63f128f3 &lt;unknown&gt;
+#9 0x562b63ee80d8 &lt;unknown&gt;
+#10 0x562b63ee9205 &lt;unknown&gt;
+#11 0x562b640fee3d &lt;unknown&gt;
+#12 0x562b64101db6 &lt;unknown&gt;
+#13 0x562b640e813e &lt;unknown&gt;
+#14 0x562b641029b5 &lt;unknown&gt;
+#15 0x562b640dc970 &lt;unknown&gt;
+#16 0x562b6411f228 &lt;unknown&gt;
+#17 0x562b6411f3bf &lt;unknown&gt;
+#18 0x562b64139abe &lt;unknown&gt;
+#19 0x7fe798597609 &lt;unknown&gt;
+</msg>
+<msg timestamp="20220925 14:45:37.562" level="FAIL">WebDriverException: Message: chrome not reachable
+  (Session info: chrome=104.0.5112.101)
+Stacktrace:
+#0 0x562b640b7403 &lt;unknown&gt;
+#1 0x562b63ebd64b &lt;unknown&gt;
+#2 0x562b63eadd24 &lt;unknown&gt;
+#3 0x562b63e9ee2e &lt;unknown&gt;
+#4 0x562b63ea3962 &lt;unknown&gt;
+#5 0x562b63ea8946 &lt;unknown&gt;
+#6 0x562b63ebeb72 &lt;unknown&gt;
+#7 0x562b63f252f1 &lt;unknown&gt;
+#8 0x562b63f128f3 &lt;unknown&gt;
+#9 0x562b63ee80d8 &lt;unknown&gt;
+#10 0x562b63ee9205 &lt;unknown&gt;
+#11 0x562b640fee3d &lt;unknown&gt;
+#12 0x562b64101db6 &lt;unknown&gt;
+#13 0x562b640e813e &lt;unknown&gt;
+#14 0x562b641029b5 &lt;unknown&gt;
+#15 0x562b640dc970 &lt;unknown&gt;
+#16 0x562b6411f228 &lt;unknown&gt;
+#17 0x562b6411f3bf &lt;unknown&gt;
+#18 0x562b64139abe &lt;unknown&gt;
+#19 0x7fe798597609 &lt;unknown&gt;
+</msg>
+<status status="FAIL" starttime="20220925 14:45:37.554" endtime="20220925 14:45:37.562"/>
+</kw>
+<kw name="Should Not Be Equal As Integers" library="BuiltIn">
+<arg>${getInteger}</arg>
+<arg>1</arg>
+<doc>Fails if objects are equal after converting them to integers.</doc>
+<status status="NOT RUN" starttime="20220925 14:45:37.562" endtime="20220925 14:45:37.562"/>
+</kw>
+<kw name="Should Not Be Equal As Integers" library="BuiltIn">
+<arg>${getInteger}</arg>
+<arg>2000</arg>
+<doc>Fails if objects are equal after converting them to integers.</doc>
+<status status="NOT RUN" starttime="20220925 14:45:37.562" endtime="20220925 14:45:37.562"/>
+</kw>
+<status status="FAIL" starttime="20220925 14:45:37.554" endtime="20220925 14:45:37.563"/>
+</kw>
+<status status="FAIL" starttime="20220925 14:45:37.553" endtime="20220925 14:45:37.563">WebDriverException: Message: chrome not reachable
+  (Session info: chrome=104.0.5112.101)
+Stacktrace:
+#0 0x562b640b7403 &lt;unknown&gt;
+#1 0x562b63ebd64b &lt;unknown&gt;
+#2 0x562b63eadd24 &lt;unknown&gt;
+#3 0x562b63e9ee2e &lt;unknown&gt;
+#4 0x562b63ea3962 &lt;unknown&gt;
+#5 0x562b63ea8946 &lt;unknown&gt;
+#6 0x562b63ebeb72 &lt;unknown&gt;
+#7 0x562b63f252f1 &lt;unknown&gt;
+#8 0x562b63f128f3 &lt;unknown&gt;
+#9 0x562b63ee80d8 &lt;unknown&gt;
+#10 0x562b63ee9205 &lt;unknown&gt;
+#11 0x562b640fee3d &lt;unknown&gt;
+#12 0x562b64101db6 &lt;unknown&gt;
+#13 0x562b640e813e &lt;unknown&gt;
+#14 0x562b641029b5 &lt;unknown&gt;
+#15 0x562b640dc970 &lt;unknown&gt;
+#16 0x562b6411f228 &lt;unknown&gt;
+#17 0x562b6411f3bf &lt;unknown&gt;
+#18 0x562b64139abe &lt;unknown&gt;
+#19 0x7fe798597609 &lt;unknown&gt;
+</status>
+</test>
+<test id="s1-t7" name="Validate Multiplier value selection" line="109">
+<kw name="Multiplier Values">
+<for flavor="IN">
+<var>${multiplierVal}</var>
+<value>${actValues}</value>
+<iter>
+<var name="${multiplierVal}">20 40 60 100 200</var>
+<kw name="Log" library="BuiltIn">
+<arg>${multiplierVal}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220925 14:45:37.565" level="INFO">20 40 60 100 200</msg>
+<status status="PASS" starttime="20220925 14:45:37.565" endtime="20220925 14:45:37.565"/>
+</kw>
+<status status="PASS" starttime="20220925 14:45:37.565" endtime="20220925 14:45:37.565"/>
+</iter>
+<status status="PASS" starttime="20220925 14:45:37.565" endtime="20220925 14:45:37.565"/>
+</for>
+<status status="PASS" starttime="20220925 14:45:37.564" endtime="20220925 14:45:37.565"/>
+</kw>
+<status status="PASS" starttime="20220925 14:45:37.564" endtime="20220925 14:45:37.566"/>
+</test>
+<test id="s1-t8" name="Validate Deal cancellation duration" line="112">
+<kw name="Cancel Duration Values">
+<for flavor="IN">
+<var>${cancellation}</var>
+<value>${multiplierVal}</value>
+<iter>
+<var name="${cancellation}">//div[@class='dc-themed-scrollbars dc-themed-scrollbars__autohide']</var>
+<kw name="Log" library="BuiltIn">
+<arg>${cancellation}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220925 14:45:37.567" level="INFO">//div[@class='dc-themed-scrollbars dc-themed-scrollbars__autohide']</msg>
+<status status="PASS" starttime="20220925 14:45:37.567" endtime="20220925 14:45:37.567"/>
+</kw>
+<status status="PASS" starttime="20220925 14:45:37.567" endtime="20220925 14:45:37.567"/>
+</iter>
+<status status="PASS" starttime="20220925 14:45:37.567" endtime="20220925 14:45:37.567"/>
+</for>
+<status status="PASS" starttime="20220925 14:45:37.566" endtime="20220925 14:45:37.567"/>
+</kw>
+<status status="PASS" starttime="20220925 14:45:37.566" endtime="20220925 14:45:37.568"/>
+</test>
+<test id="s1-t9" name="Validate Single click on plus (+)" line="115">
+<kw name="Plus Button">
+<kw name="Get Value" library="SeleniumLibrary">
+<var>${getInteger2}</var>
+<arg>${amountField}</arg>
+<doc>Returns the value attribute of the element identified by ``locator``.</doc>
+<msg timestamp="20220925 14:45:37.582" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: chrome not reachable
+  (Session info: chrome=104.0.5112.101)
+Stacktrace:
+#0 0x562b640b7403 &lt;unknown&gt;
+#1 0x562b63ebd64b &lt;unknown&gt;
+#2 0x562b63eadd24 &lt;unknown&gt;
+#3 0x562b63e9ee2e &lt;unknown&gt;
+#4 0x562b63ea3962 &lt;unknown&gt;
+#5 0x562b63ea8946 &lt;unknown&gt;
+#6 0x562b63ebeb72 &lt;unknown&gt;
+#7 0x562b63f252f1 &lt;unknown&gt;
+#8 0x562b63f128f3 &lt;unknown&gt;
+#9 0x562b63ee80d8 &lt;unknown&gt;
+#10 0x562b63ee9205 &lt;unknown&gt;
+#11 0x562b640fee3d &lt;unknown&gt;
+#12 0x562b64101db6 &lt;unknown&gt;
+#13 0x562b640e813e &lt;unknown&gt;
+#14 0x562b641029b5 &lt;unknown&gt;
+#15 0x562b640dc970 &lt;unknown&gt;
+#16 0x562b6411f228 &lt;unknown&gt;
+#17 0x562b6411f3bf &lt;unknown&gt;
+#18 0x562b64139abe &lt;unknown&gt;
+#19 0x7fe798597609 &lt;unknown&gt;
+</msg>
+<msg timestamp="20220925 14:45:37.582" level="FAIL">WebDriverException: Message: chrome not reachable
+  (Session info: chrome=104.0.5112.101)
+Stacktrace:
+#0 0x562b640b7403 &lt;unknown&gt;
+#1 0x562b63ebd64b &lt;unknown&gt;
+#2 0x562b63eadd24 &lt;unknown&gt;
+#3 0x562b63e9ee2e &lt;unknown&gt;
+#4 0x562b63ea3962 &lt;unknown&gt;
+#5 0x562b63ea8946 &lt;unknown&gt;
+#6 0x562b63ebeb72 &lt;unknown&gt;
+#7 0x562b63f252f1 &lt;unknown&gt;
+#8 0x562b63f128f3 &lt;unknown&gt;
+#9 0x562b63ee80d8 &lt;unknown&gt;
+#10 0x562b63ee9205 &lt;unknown&gt;
+#11 0x562b640fee3d &lt;unknown&gt;
+#12 0x562b64101db6 &lt;unknown&gt;
+#13 0x562b640e813e &lt;unknown&gt;
+#14 0x562b641029b5 &lt;unknown&gt;
+#15 0x562b640dc970 &lt;unknown&gt;
+#16 0x562b6411f228 &lt;unknown&gt;
+#17 0x562b6411f3bf &lt;unknown&gt;
+#18 0x562b64139abe &lt;unknown&gt;
+#19 0x7fe798597609 &lt;unknown&gt;
+</msg>
+<status status="FAIL" starttime="20220925 14:45:37.569" endtime="20220925 14:45:37.583"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//button[@id='dt_amount_input_add']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220925 14:45:37.583" endtime="20220925 14:45:37.583"/>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<var>${addAmount}</var>
+<arg>${getInteger2}+1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" starttime="20220925 14:45:37.583" endtime="20220925 14:45:37.583"/>
+</kw>
+<kw name="Get Value" library="SeleniumLibrary">
+<var>${newValue}</var>
+<arg>${amountField}</arg>
+<doc>Returns the value attribute of the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220925 14:45:37.583" endtime="20220925 14:45:37.583"/>
+</kw>
+<kw name="Should Be Equal As Integers" library="BuiltIn">
+<arg>${newValue}</arg>
+<arg>${addAmount}</arg>
+<doc>Fails if objects are unequal after converting them to integers.</doc>
+<status status="NOT RUN" starttime="20220925 14:45:37.583" endtime="20220925 14:45:37.583"/>
+</kw>
+<status status="FAIL" starttime="20220925 14:45:37.568" endtime="20220925 14:45:37.583"/>
+</kw>
+<status status="FAIL" starttime="20220925 14:45:37.568" endtime="20220925 14:45:37.584">WebDriverException: Message: chrome not reachable
+  (Session info: chrome=104.0.5112.101)
+Stacktrace:
+#0 0x562b640b7403 &lt;unknown&gt;
+#1 0x562b63ebd64b &lt;unknown&gt;
+#2 0x562b63eadd24 &lt;unknown&gt;
+#3 0x562b63e9ee2e &lt;unknown&gt;
+#4 0x562b63ea3962 &lt;unknown&gt;
+#5 0x562b63ea8946 &lt;unknown&gt;
+#6 0x562b63ebeb72 &lt;unknown&gt;
+#7 0x562b63f252f1 &lt;unknown&gt;
+#8 0x562b63f128f3 &lt;unknown&gt;
+#9 0x562b63ee80d8 &lt;unknown&gt;
+#10 0x562b63ee9205 &lt;unknown&gt;
+#11 0x562b640fee3d &lt;unknown&gt;
+#12 0x562b64101db6 &lt;unknown&gt;
+#13 0x562b640e813e &lt;unknown&gt;
+#14 0x562b641029b5 &lt;unknown&gt;
+#15 0x562b640dc970 &lt;unknown&gt;
+#16 0x562b6411f228 &lt;unknown&gt;
+#17 0x562b6411f3bf &lt;unknown&gt;
+#18 0x562b64139abe &lt;unknown&gt;
+#19 0x7fe798597609 &lt;unknown&gt;
+</status>
+</test>
+<test id="s1-t10" name="Validate Single click on minus (-)" line="118">
+<kw name="Minus Button">
+<kw name="Get Value" library="SeleniumLibrary">
+<var>${getInteger2}</var>
+<arg>${amountField}</arg>
+<doc>Returns the value attribute of the element identified by ``locator``.</doc>
+<msg timestamp="20220925 14:45:37.597" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: chrome not reachable
+  (Session info: chrome=104.0.5112.101)
+Stacktrace:
+#0 0x562b640b7403 &lt;unknown&gt;
+#1 0x562b63ebd64b &lt;unknown&gt;
+#2 0x562b63eadd24 &lt;unknown&gt;
+#3 0x562b63e9ee2e &lt;unknown&gt;
+#4 0x562b63ea3962 &lt;unknown&gt;
+#5 0x562b63ea8946 &lt;unknown&gt;
+#6 0x562b63ebeb72 &lt;unknown&gt;
+#7 0x562b63f252f1 &lt;unknown&gt;
+#8 0x562b63f128f3 &lt;unknown&gt;
+#9 0x562b63ee80d8 &lt;unknown&gt;
+#10 0x562b63ee9205 &lt;unknown&gt;
+#11 0x562b640fee3d &lt;unknown&gt;
+#12 0x562b64101db6 &lt;unknown&gt;
+#13 0x562b640e813e &lt;unknown&gt;
+#14 0x562b641029b5 &lt;unknown&gt;
+#15 0x562b640dc970 &lt;unknown&gt;
+#16 0x562b6411f228 &lt;unknown&gt;
+#17 0x562b6411f3bf &lt;unknown&gt;
+#18 0x562b64139abe &lt;unknown&gt;
+#19 0x7fe798597609 &lt;unknown&gt;
+</msg>
+<msg timestamp="20220925 14:45:37.598" level="FAIL">WebDriverException: Message: chrome not reachable
+  (Session info: chrome=104.0.5112.101)
+Stacktrace:
+#0 0x562b640b7403 &lt;unknown&gt;
+#1 0x562b63ebd64b &lt;unknown&gt;
+#2 0x562b63eadd24 &lt;unknown&gt;
+#3 0x562b63e9ee2e &lt;unknown&gt;
+#4 0x562b63ea3962 &lt;unknown&gt;
+#5 0x562b63ea8946 &lt;unknown&gt;
+#6 0x562b63ebeb72 &lt;unknown&gt;
+#7 0x562b63f252f1 &lt;unknown&gt;
+#8 0x562b63f128f3 &lt;unknown&gt;
+#9 0x562b63ee80d8 &lt;unknown&gt;
+#10 0x562b63ee9205 &lt;unknown&gt;
+#11 0x562b640fee3d &lt;unknown&gt;
+#12 0x562b64101db6 &lt;unknown&gt;
+#13 0x562b640e813e &lt;unknown&gt;
+#14 0x562b641029b5 &lt;unknown&gt;
+#15 0x562b640dc970 &lt;unknown&gt;
+#16 0x562b6411f228 &lt;unknown&gt;
+#17 0x562b6411f3bf &lt;unknown&gt;
+#18 0x562b64139abe &lt;unknown&gt;
+#19 0x7fe798597609 &lt;unknown&gt;
+</msg>
+<status status="FAIL" starttime="20220925 14:45:37.585" endtime="20220925 14:45:37.598"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//button[@id='dt_amount_input_sub']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220925 14:45:37.598" endtime="20220925 14:45:37.598"/>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<var>${minusAmount}</var>
+<arg>${getInteger2}-1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" starttime="20220925 14:45:37.598" endtime="20220925 14:45:37.599"/>
+</kw>
+<kw name="Get Value" library="SeleniumLibrary">
+<var>${newValue}</var>
+<arg>${amountField}</arg>
+<doc>Returns the value attribute of the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220925 14:45:37.599" endtime="20220925 14:45:37.599"/>
+</kw>
+<kw name="Should Be Equal As Integers" library="BuiltIn">
+<arg>${newValue}</arg>
+<arg>${minusAmount}</arg>
+<doc>Fails if objects are unequal after converting them to integers.</doc>
+<status status="NOT RUN" starttime="20220925 14:45:37.599" endtime="20220925 14:45:37.599"/>
+</kw>
+<status status="FAIL" starttime="20220925 14:45:37.585" endtime="20220925 14:45:37.599"/>
+</kw>
+<status status="FAIL" starttime="20220925 14:45:37.584" endtime="20220925 14:45:37.600">WebDriverException: Message: chrome not reachable
+  (Session info: chrome=104.0.5112.101)
+Stacktrace:
+#0 0x562b640b7403 &lt;unknown&gt;
+#1 0x562b63ebd64b &lt;unknown&gt;
+#2 0x562b63eadd24 &lt;unknown&gt;
+#3 0x562b63e9ee2e &lt;unknown&gt;
+#4 0x562b63ea3962 &lt;unknown&gt;
+#5 0x562b63ea8946 &lt;unknown&gt;
+#6 0x562b63ebeb72 &lt;unknown&gt;
+#7 0x562b63f252f1 &lt;unknown&gt;
+#8 0x562b63f128f3 &lt;unknown&gt;
+#9 0x562b63ee80d8 &lt;unknown&gt;
+#10 0x562b63ee9205 &lt;unknown&gt;
+#11 0x562b640fee3d &lt;unknown&gt;
+#12 0x562b64101db6 &lt;unknown&gt;
+#13 0x562b640e813e &lt;unknown&gt;
+#14 0x562b641029b5 &lt;unknown&gt;
+#15 0x562b640dc970 &lt;unknown&gt;
+#16 0x562b6411f228 &lt;unknown&gt;
+#17 0x562b6411f3bf &lt;unknown&gt;
+#18 0x562b64139abe &lt;unknown&gt;
+#19 0x7fe798597609 &lt;unknown&gt;
+</status>
+</test>
+<test id="s1-t11" name="Only deal cancellation or take profit/stop loss is allowed" line="121">
+<kw name="Select Profit/Loss">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//input[@id='dc_take_profit-checkbox_input']/../span</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220925 14:45:37.602" level="INFO">Clicking element '//input[@id='dc_take_profit-checkbox_input']/../span'.</msg>
+<msg timestamp="20220925 14:45:37.610" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: chrome not reachable
+  (Session info: chrome=104.0.5112.101)
+Stacktrace:
+#0 0x562b640b7403 &lt;unknown&gt;
+#1 0x562b63ebd64b &lt;unknown&gt;
+#2 0x562b63eadd24 &lt;unknown&gt;
+#3 0x562b63e9ee2e &lt;unknown&gt;
+#4 0x562b63ea3962 &lt;unknown&gt;
+#5 0x562b63ea8946 &lt;unknown&gt;
+#6 0x562b63ebeb72 &lt;unknown&gt;
+#7 0x562b63f252f1 &lt;unknown&gt;
+#8 0x562b63f128f3 &lt;unknown&gt;
+#9 0x562b63ee80d8 &lt;unknown&gt;
+#10 0x562b63ee9205 &lt;unknown&gt;
+#11 0x562b640fee3d &lt;unknown&gt;
+#12 0x562b64101db6 &lt;unknown&gt;
+#13 0x562b640e813e &lt;unknown&gt;
+#14 0x562b641029b5 &lt;unknown&gt;
+#15 0x562b640dc970 &lt;unknown&gt;
+#16 0x562b6411f228 &lt;unknown&gt;
+#17 0x562b6411f3bf &lt;unknown&gt;
+#18 0x562b64139abe &lt;unknown&gt;
+#19 0x7fe798597609 &lt;unknown&gt;
+</msg>
+<msg timestamp="20220925 14:45:37.611" level="FAIL">WebDriverException: Message: chrome not reachable
+  (Session info: chrome=104.0.5112.101)
+Stacktrace:
+#0 0x562b640b7403 &lt;unknown&gt;
+#1 0x562b63ebd64b &lt;unknown&gt;
+#2 0x562b63eadd24 &lt;unknown&gt;
+#3 0x562b63e9ee2e &lt;unknown&gt;
+#4 0x562b63ea3962 &lt;unknown&gt;
+#5 0x562b63ea8946 &lt;unknown&gt;
+#6 0x562b63ebeb72 &lt;unknown&gt;
+#7 0x562b63f252f1 &lt;unknown&gt;
+#8 0x562b63f128f3 &lt;unknown&gt;
+#9 0x562b63ee80d8 &lt;unknown&gt;
+#10 0x562b63ee9205 &lt;unknown&gt;
+#11 0x562b640fee3d &lt;unknown&gt;
+#12 0x562b64101db6 &lt;unknown&gt;
+#13 0x562b640e813e &lt;unknown&gt;
+#14 0x562b641029b5 &lt;unknown&gt;
+#15 0x562b640dc970 &lt;unknown&gt;
+#16 0x562b6411f228 &lt;unknown&gt;
+#17 0x562b6411f3bf &lt;unknown&gt;
+#18 0x562b64139abe &lt;unknown&gt;
+#19 0x7fe798597609 &lt;unknown&gt;
+</msg>
+<status status="FAIL" starttime="20220925 14:45:37.602" endtime="20220925 14:45:37.611"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//input[@id='dc_stop_loss-checkbox_input']/../span</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220925 14:45:37.611" endtime="20220925 14:45:37.611"/>
+</kw>
+<status status="FAIL" starttime="20220925 14:45:37.601" endtime="20220925 14:45:37.612"/>
+</kw>
+<kw name="Cancellation Validation">
+<status status="NOT RUN" starttime="20220925 14:45:37.612" endtime="20220925 14:45:37.612"/>
+</kw>
+<kw name="Select Profit/Loss">
+<status status="NOT RUN" starttime="20220925 14:45:37.612" endtime="20220925 14:45:37.612"/>
+</kw>
+<kw name="Profit/Loss Validation">
+<status status="NOT RUN" starttime="20220925 14:45:37.612" endtime="20220925 14:45:37.612"/>
+</kw>
+<status status="FAIL" starttime="20220925 14:45:37.601" endtime="20220925 14:45:37.612">WebDriverException: Message: chrome not reachable
+  (Session info: chrome=104.0.5112.101)
+Stacktrace:
+#0 0x562b640b7403 &lt;unknown&gt;
+#1 0x562b63ebd64b &lt;unknown&gt;
+#2 0x562b63eadd24 &lt;unknown&gt;
+#3 0x562b63e9ee2e &lt;unknown&gt;
+#4 0x562b63ea3962 &lt;unknown&gt;
+#5 0x562b63ea8946 &lt;unknown&gt;
+#6 0x562b63ebeb72 &lt;unknown&gt;
+#7 0x562b63f252f1 &lt;unknown&gt;
+#8 0x562b63f128f3 &lt;unknown&gt;
+#9 0x562b63ee80d8 &lt;unknown&gt;
+#10 0x562b63ee9205 &lt;unknown&gt;
+#11 0x562b640fee3d &lt;unknown&gt;
+#12 0x562b64101db6 &lt;unknown&gt;
+#13 0x562b640e813e &lt;unknown&gt;
+#14 0x562b641029b5 &lt;unknown&gt;
+#15 0x562b640dc970 &lt;unknown&gt;
+#16 0x562b6411f228 &lt;unknown&gt;
+#17 0x562b6411f3bf &lt;unknown&gt;
+#18 0x562b64139abe &lt;unknown&gt;
+#19 0x7fe798597609 &lt;unknown&gt;
+</status>
+</test>
+<status status="FAIL" starttime="20220925 14:45:20.388" endtime="20220925 14:45:37.618"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="9" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="9" skip="0" id="s1" name="Task5">Task5</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20220925 14:45:37.526" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: chrome not reachable
+  (Session info: chrome=104.0.5112.101)
+Stacktrace:
+#0 0x562b640b7403 &lt;unknown&gt;
+#1 0x562b63ebd64b &lt;unknown&gt;
+#2 0x562b63eadd24 &lt;unknown&gt;
+#3 0x562b63e9ee2e &lt;unknown&gt;
+#4 0x562b63ea3962 &lt;unknown&gt;
+#5 0x562b63ea8946 &lt;unknown&gt;
+#6 0x562b63ebeb72 &lt;unknown&gt;
+#7 0x562b63f252f1 &lt;unknown&gt;
+#8 0x562b63f128f3 &lt;unknown&gt;
+#9 0x562b63ee80d8 &lt;unknown&gt;
+#10 0x562b63ee9205 &lt;unknown&gt;
+#11 0x562b640fee3d &lt;unknown&gt;
+#12 0x562b64101db6 &lt;unknown&gt;
+#13 0x562b640e813e &lt;unknown&gt;
+#14 0x562b641029b5 &lt;unknown&gt;
+#15 0x562b640dc970 &lt;unknown&gt;
+#16 0x562b6411f228 &lt;unknown&gt;
+#17 0x562b6411f3bf &lt;unknown&gt;
+#18 0x562b64139abe &lt;unknown&gt;
+#19 0x7fe798597609 &lt;unknown&gt;
+</msg>
+<msg timestamp="20220925 14:45:37.536" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: chrome not reachable
+  (Session info: chrome=104.0.5112.101)
+Stacktrace:
+#0 0x562b640b7403 &lt;unknown&gt;
+#1 0x562b63ebd64b &lt;unknown&gt;
+#2 0x562b63eadd24 &lt;unknown&gt;
+#3 0x562b63e9ee2e &lt;unknown&gt;
+#4 0x562b63ea3962 &lt;unknown&gt;
+#5 0x562b63ea8946 &lt;unknown&gt;
+#6 0x562b63ebeb72 &lt;unknown&gt;
+#7 0x562b63f252f1 &lt;unknown&gt;
+#8 0x562b63f128f3 &lt;unknown&gt;
+#9 0x562b63ee80d8 &lt;unknown&gt;
+#10 0x562b63ee9205 &lt;unknown&gt;
+#11 0x562b640fee3d &lt;unknown&gt;
+#12 0x562b64101db6 &lt;unknown&gt;
+#13 0x562b640e813e &lt;unknown&gt;
+#14 0x562b641029b5 &lt;unknown&gt;
+#15 0x562b640dc970 &lt;unknown&gt;
+#16 0x562b6411f228 &lt;unknown&gt;
+#17 0x562b6411f3bf &lt;unknown&gt;
+#18 0x562b64139abe &lt;unknown&gt;
+#19 0x7fe798597609 &lt;unknown&gt;
+</msg>
+<msg timestamp="20220925 14:45:37.550" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: chrome not reachable
+  (Session info: chrome=104.0.5112.101)
+Stacktrace:
+#0 0x562b640b7403 &lt;unknown&gt;
+#1 0x562b63ebd64b &lt;unknown&gt;
+#2 0x562b63eadd24 &lt;unknown&gt;
+#3 0x562b63e9ee2e &lt;unknown&gt;
+#4 0x562b63ea3962 &lt;unknown&gt;
+#5 0x562b63ea8946 &lt;unknown&gt;
+#6 0x562b63ebeb72 &lt;unknown&gt;
+#7 0x562b63f252f1 &lt;unknown&gt;
+#8 0x562b63f128f3 &lt;unknown&gt;
+#9 0x562b63ee80d8 &lt;unknown&gt;
+#10 0x562b63ee9205 &lt;unknown&gt;
+#11 0x562b640fee3d &lt;unknown&gt;
+#12 0x562b64101db6 &lt;unknown&gt;
+#13 0x562b640e813e &lt;unknown&gt;
+#14 0x562b641029b5 &lt;unknown&gt;
+#15 0x562b640dc970 &lt;unknown&gt;
+#16 0x562b6411f228 &lt;unknown&gt;
+#17 0x562b6411f3bf &lt;unknown&gt;
+#18 0x562b64139abe &lt;unknown&gt;
+#19 0x7fe798597609 &lt;unknown&gt;
+</msg>
+<msg timestamp="20220925 14:45:37.561" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: chrome not reachable
+  (Session info: chrome=104.0.5112.101)
+Stacktrace:
+#0 0x562b640b7403 &lt;unknown&gt;
+#1 0x562b63ebd64b &lt;unknown&gt;
+#2 0x562b63eadd24 &lt;unknown&gt;
+#3 0x562b63e9ee2e &lt;unknown&gt;
+#4 0x562b63ea3962 &lt;unknown&gt;
+#5 0x562b63ea8946 &lt;unknown&gt;
+#6 0x562b63ebeb72 &lt;unknown&gt;
+#7 0x562b63f252f1 &lt;unknown&gt;
+#8 0x562b63f128f3 &lt;unknown&gt;
+#9 0x562b63ee80d8 &lt;unknown&gt;
+#10 0x562b63ee9205 &lt;unknown&gt;
+#11 0x562b640fee3d &lt;unknown&gt;
+#12 0x562b64101db6 &lt;unknown&gt;
+#13 0x562b640e813e &lt;unknown&gt;
+#14 0x562b641029b5 &lt;unknown&gt;
+#15 0x562b640dc970 &lt;unknown&gt;
+#16 0x562b6411f228 &lt;unknown&gt;
+#17 0x562b6411f3bf &lt;unknown&gt;
+#18 0x562b64139abe &lt;unknown&gt;
+#19 0x7fe798597609 &lt;unknown&gt;
+</msg>
+<msg timestamp="20220925 14:45:37.582" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: chrome not reachable
+  (Session info: chrome=104.0.5112.101)
+Stacktrace:
+#0 0x562b640b7403 &lt;unknown&gt;
+#1 0x562b63ebd64b &lt;unknown&gt;
+#2 0x562b63eadd24 &lt;unknown&gt;
+#3 0x562b63e9ee2e &lt;unknown&gt;
+#4 0x562b63ea3962 &lt;unknown&gt;
+#5 0x562b63ea8946 &lt;unknown&gt;
+#6 0x562b63ebeb72 &lt;unknown&gt;
+#7 0x562b63f252f1 &lt;unknown&gt;
+#8 0x562b63f128f3 &lt;unknown&gt;
+#9 0x562b63ee80d8 &lt;unknown&gt;
+#10 0x562b63ee9205 &lt;unknown&gt;
+#11 0x562b640fee3d &lt;unknown&gt;
+#12 0x562b64101db6 &lt;unknown&gt;
+#13 0x562b640e813e &lt;unknown&gt;
+#14 0x562b641029b5 &lt;unknown&gt;
+#15 0x562b640dc970 &lt;unknown&gt;
+#16 0x562b6411f228 &lt;unknown&gt;
+#17 0x562b6411f3bf &lt;unknown&gt;
+#18 0x562b64139abe &lt;unknown&gt;
+#19 0x7fe798597609 &lt;unknown&gt;
+</msg>
+<msg timestamp="20220925 14:45:37.597" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: chrome not reachable
+  (Session info: chrome=104.0.5112.101)
+Stacktrace:
+#0 0x562b640b7403 &lt;unknown&gt;
+#1 0x562b63ebd64b &lt;unknown&gt;
+#2 0x562b63eadd24 &lt;unknown&gt;
+#3 0x562b63e9ee2e &lt;unknown&gt;
+#4 0x562b63ea3962 &lt;unknown&gt;
+#5 0x562b63ea8946 &lt;unknown&gt;
+#6 0x562b63ebeb72 &lt;unknown&gt;
+#7 0x562b63f252f1 &lt;unknown&gt;
+#8 0x562b63f128f3 &lt;unknown&gt;
+#9 0x562b63ee80d8 &lt;unknown&gt;
+#10 0x562b63ee9205 &lt;unknown&gt;
+#11 0x562b640fee3d &lt;unknown&gt;
+#12 0x562b64101db6 &lt;unknown&gt;
+#13 0x562b640e813e &lt;unknown&gt;
+#14 0x562b641029b5 &lt;unknown&gt;
+#15 0x562b640dc970 &lt;unknown&gt;
+#16 0x562b6411f228 &lt;unknown&gt;
+#17 0x562b6411f3bf &lt;unknown&gt;
+#18 0x562b64139abe &lt;unknown&gt;
+#19 0x7fe798597609 &lt;unknown&gt;
+</msg>
+<msg timestamp="20220925 14:45:37.610" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: chrome not reachable
+  (Session info: chrome=104.0.5112.101)
+Stacktrace:
+#0 0x562b640b7403 &lt;unknown&gt;
+#1 0x562b63ebd64b &lt;unknown&gt;
+#2 0x562b63eadd24 &lt;unknown&gt;
+#3 0x562b63e9ee2e &lt;unknown&gt;
+#4 0x562b63ea3962 &lt;unknown&gt;
+#5 0x562b63ea8946 &lt;unknown&gt;
+#6 0x562b63ebeb72 &lt;unknown&gt;
+#7 0x562b63f252f1 &lt;unknown&gt;
+#8 0x562b63f128f3 &lt;unknown&gt;
+#9 0x562b63ee80d8 &lt;unknown&gt;
+#10 0x562b63ee9205 &lt;unknown&gt;
+#11 0x562b640fee3d &lt;unknown&gt;
+#12 0x562b64101db6 &lt;unknown&gt;
+#13 0x562b640e813e &lt;unknown&gt;
+#14 0x562b641029b5 &lt;unknown&gt;
+#15 0x562b640dc970 &lt;unknown&gt;
+#16 0x562b6411f228 &lt;unknown&gt;
+#17 0x562b6411f3bf &lt;unknown&gt;
+#18 0x562b64139abe &lt;unknown&gt;
+#19 0x7fe798597609 &lt;unknown&gt;
+</msg>
+</errors>
+</robot>

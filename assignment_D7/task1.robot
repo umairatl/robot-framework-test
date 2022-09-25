@@ -3,17 +3,19 @@ Library  SeleniumLibrary
 
 *** Variables ***
 ${rise_button}  //div[@class='btn-purchase__text_wrapper' and contains(.,'Rise')]
+${email}    //input[@type='email']
+
 
 *** Keywords ***
-Open Deriv page 
+Open page 
     Open Browser    https://app.deriv.com/    chrome
     Maximize Browser Window
     Wait Until Page Contains Element    ${rise_button}    30
     Click Element    dt_login_button
-    Wait Until Page Contains Element    //input[@type='email']    10
+    Wait Until Page Contains Element    ${email}    10
 
-Login to Deriv 
-    Input Text    //input[@type='email']    email
+Login
+    Input Text    ${email}    email
     Input Text    //input[@type='password']    password 
     Click Element    //button[@type='submit']
 
@@ -28,7 +30,14 @@ Validation
 
 *** Test Cases ***
 Task1
-    Open Deriv page 
-    Login To Deriv
+Open Deriv page 
+    Open page
+
+Login To Deriv
+    Login
+
+Change to Demo account
     Virtual
+
+Validate Demo account
     Validation
